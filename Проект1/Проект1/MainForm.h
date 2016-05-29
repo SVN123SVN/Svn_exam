@@ -139,6 +139,7 @@ namespace Проект1 {
 			this->button1->TabIndex = 5;
 			this->button1->Text = L"Найти";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
 			// 
 			// MainForm
 			// 
@@ -159,5 +160,10 @@ namespace Проект1 {
 		}
 #pragma endregion
 	
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+#include"Toys.h"
+			 Toys toy1=new Toys("Кукла", 100, 4,10);
+			 Toys toy2("Ball", 100, 4,10);
+		 }
 };
 }

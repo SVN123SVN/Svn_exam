@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="ToyForm.cpp" />
+    <ClCompile Include="Toys.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
