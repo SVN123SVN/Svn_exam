@@ -5,20 +5,20 @@ using namespace std;
 class Toys
 {
 public:
-	char getName();
+	string getName();
 	int getPrice();
 	int getAge();
 	int getCount();
 	
-	Toys(char *name,int price,int age,int count);
+	Toys(string name,int price,int age,int count);
 	~Toys();
 
 private:
-	char *name;
+	string name;
 	int price, age, count;
 };
 
-Toys::Toys(char *name,int price,int age,int count)
+Toys::Toys(string name,int price,int age,int count)
 {
 	this->name=name;
 	this->age=age;
@@ -30,8 +30,8 @@ Toys::~Toys()
 {
 }
 
-char Toys::getName(){
-	return this->name[10];
+string Toys::getName(){
+	return this->name;
 }
 int Toys::getAge(){
 	return this->age;
