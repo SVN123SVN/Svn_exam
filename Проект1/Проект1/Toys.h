@@ -11,14 +11,18 @@ public:
 	}
 	int Toys::getPrice(){		
 	}
-	Toys(string name, int price, int age, int count);
+	void setName(string name);
+	void setAge(int age);
+	void setPrice(int price);
+	void setCount(int count);
+	Toys();
 	~Toys();
 
 private:
 
 };
 
-Toys::Toys(string name, int price, int age, int count)
+Toys::Toys()
 {
 }
 
@@ -37,6 +41,18 @@ int Toys::getCount(){
 }
 int Toys::getPrice(){
 	return this->price;
+}
+void Toys::setName(string name){
+	this->name = name;
+}
+void Toys::setAge(int age){
+	this->age = age;
+}
+void Toys::setPrice(int price){
+	this->price = price;
+}
+void Toys::setCount(int count){
+	this->count = count;
 }
 
 #endif

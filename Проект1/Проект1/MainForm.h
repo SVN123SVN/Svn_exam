@@ -163,10 +163,8 @@ namespace Проект1 {
 #pragma endregion
 	
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-			 Toys toy1("Кукла", 100, 4, 10);
-			 Toys toy2("Мяч", 100, 5, 10);
-			 Toys toy3("Машинка", 150, 6, 15);
-			 Toys toy4("Конструктор", 250, 3, 10);
+			 Toys toy[10];
+			 toy[0].setName("Кукла");
 		 }
 };
 }
