@@ -3,56 +3,18 @@
 class Toys
 {
 public:
-	string Toys::getName(){
-	}
-	int Toys::getAge(){
-	}
-	int Toys::getCount(){
-	}
-	int Toys::getPrice(){		
-	}
-	void setName(string name);
-	void setAge(int age);
-	void setPrice(int price);
-	void setCount(int count);
+	__declspec(dllexport) char Toys::getName();
+	__declspec(dllexport) int Toys::getAge();
+	__declspec(dllexport) int Toys::getCount();
+	__declspec(dllexport) int Toys::getPrice();
+	__declspec(dllexport) void setName(char *name);
+	__declspec(dllexport) void setAge(int age);
+	__declspec(dllexport) void setPrice(int price);
+	__declspec(dllexport) void setCount(int count);
 	Toys();
 	~Toys();
-
 private:
-
+	char name;
+	int age, count, price;
 };
-
-Toys::Toys()
-{
-}
-
-Toys::~Toys()
-{
-}
-
-string Toys::getName(){
-	return this->name;
-}
-int Toys::getAge(){
-	return this->age;
-}
-int Toys::getCount(){
-	return this->count;
-}
-int Toys::getPrice(){
-	return this->price;
-}
-void Toys::setName(string name){
-	this->name = name;
-}
-void Toys::setAge(int age){
-	this->age = age;
-}
-void Toys::setPrice(int price){
-	this->price = price;
-}
-void Toys::setCount(int count){
-	this->count = count;
-}
-
 #endif

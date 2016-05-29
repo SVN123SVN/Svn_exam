@@ -45,6 +45,7 @@ namespace Проект1 {
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Label^  label4;
 
 
 	private:
@@ -68,6 +69,7 @@ namespace Проект1 {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -131,7 +133,6 @@ namespace Проект1 {
 			this->label1->Size = System::Drawing::Size(33, 13);
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"Цена";
-			this->label1->Click += gcnew System::EventHandler(this, &MainForm::label1_Click);
 			// 
 			// button1
 			// 
@@ -143,11 +144,20 @@ namespace Проект1 {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MainForm::button1_Click);
 			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(125, 182);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(0, 13);
+			this->label4->TabIndex = 6;
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(493, 261);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->groupBox1);
@@ -184,8 +194,17 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			 toy[4].setAge(1);
 			 toy[4].setPrice(30);
 			 toy[4].setCount(11);
-			 
+			 int a, b, x;
+			 a = System::Convert::ToInt32(textBox1->Text);
+			 b = System::Convert::ToInt32(textBox2->Text);
+			 x = System::Convert::ToInt32(textBox3->Text);
+			 for (int i = 0; i < 5; i++) {
+				 if (a <= toy[i].getAge() && b >= toy[i].getAge() && x >= toy[i].getPrice()){
+					 MainForm::label4->Text = System::Convert::ToString(toy[i].getName());
+				 }
+			 }
 
 		 }
+
 };
 }
