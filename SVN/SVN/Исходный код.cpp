@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
 	setlocale(0, "");
-	Toys *toy = new Toys[10];
+	Toys toy[10];
 	access(toy);
 	return 0;
 }
