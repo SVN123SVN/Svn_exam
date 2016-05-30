@@ -1,5 +1,6 @@
 #ifndef TOYS
 #define TOYS
+
 class Toys
 {
 public:
