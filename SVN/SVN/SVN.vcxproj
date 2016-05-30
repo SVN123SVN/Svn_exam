@@ -65,11 +65,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Access.cpp" />
+    <ClCompile Include="find.cpp" />
     <ClCompile Include="input_a_b.cpp" />
     <ClCompile Include="Исходный код.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Access.h" />
+    <ClInclude Include="find.h" />
     <ClInclude Include="input_a_b.h" />
     <ClInclude Include="Toys.h" />
   </ItemGroup>

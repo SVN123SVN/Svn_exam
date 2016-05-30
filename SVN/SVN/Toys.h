@@ -2,7 +2,7 @@
 #define TOYS
 struct Toys
 {
-	string name;
+	char name;
 	int age;
 	int price;
 	int count;

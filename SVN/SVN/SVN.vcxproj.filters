@@ -24,6 +24,9 @@
     <ClCompile Include="input_a_b.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+    <ClCompile Include="find.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Toys.h">
@@ -33,6 +36,9 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="input_a_b.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="find.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
