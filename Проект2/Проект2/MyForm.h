@@ -227,7 +227,7 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			 if(comboBox5->SelectedIndex==3){
 				 score++;
 			 }
-			 label6->Text="Вы набрали "+score+" баллов";
+			 label6->Text="Вы набрали "+score+" балов";
 			 
 
 		 }
