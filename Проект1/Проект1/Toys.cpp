@@ -24,8 +24,8 @@ __declspec(dllexport) int Toys::getPrice(){
 	return this->price;
 }
 
-__declspec(dllexport) void Toys::setName(char *name){
-	this->name = *name;
+__declspec(dllexport) void Toys::setName(char name){
+	this->name = name;
 }
 __declspec(dllexport) void Toys::setAge(int age){
 	this->age = age;

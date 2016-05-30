@@ -64,7 +64,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Access.cpp" />
     <ClCompile Include="Исходный код.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Access.h" />
+    <ClInclude Include="Toys.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

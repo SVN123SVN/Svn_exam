@@ -174,23 +174,23 @@ namespace Проект1 {
 	
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 			 Toys toy[10];
-			 toy[0].setName("Кукла");
+			 toy[0].setName("Ball");
 			 toy[0].setAge(3);
 			 toy[0].setPrice(50);
 			 toy[0].setCount(10);
-			 toy[1].setName("Мяч");
+			 toy[1].setName("adaw");
 			 toy[1].setAge(2);
 			 toy[1].setPrice(60);
 			 toy[1].setCount(5);
-			 toy[2].setName("Конструктор");
+			 toy[2].setName("sdadaw");
 			 toy[2].setAge(3);
 			 toy[2].setPrice(65);
 			 toy[2].setCount(8);
-			 toy[3].setName("Машина");
+			 toy[3].setName("qwewqe");
 			 toy[3].setAge(4);
 			 toy[3].setPrice(55);
 			 toy[3].setCount(5);
-			 toy[4].setName("Мишки");
+			 toy[4].setName("fokok");
 			 toy[4].setAge(1);
 			 toy[4].setPrice(30);
 			 toy[4].setCount(11);
