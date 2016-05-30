@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>Visual Studio 2012 (v120)</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -64,16 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Access.cpp" />
-    <ClCompile Include="find.cpp" />
-    <ClCompile Include="input_a_b.cpp" />
     <ClCompile Include="Исходный код.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Access.h" />
-    <ClInclude Include="find.h" />
-    <ClInclude Include="input_a_b.h" />
-    <ClInclude Include="Toys.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
